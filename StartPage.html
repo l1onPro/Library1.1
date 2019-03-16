@@ -10,26 +10,28 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
+
 </head>
 <body>
 
     <nav class="navbar navbar-expand-lg">
-            <div class="navbar-header">
-                <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/book-logo-2.png" width="40" height="30" class="d-inline-block">
-                    Онлайн библиотека
-                </a>
-            </div>
+        <button class="navbar-toggler" type="button" data-target="#navbarNav" data-toggle="collapse" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#">
+            <img src="images/book-logo-2.png" width="40" height="30" class="d-inline-block">
+        </a>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-4">
-                    <li class="nav-item"> <a class="nav-link" href="#">Контакты</a> </li>
-                    <li class="nav-item"> <a class="nav-link" href="#">Личный кабинет</a> </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="active"> <a class="nav-link" href="#">Онлайн библиотека</a> </li>
+                <li> <a class="nav-link" href="#">Контакты</a> </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item"> <a class="nav-link" href="#">Личный кабинет</a> </li>
+                <li class="nav-item"> <a class="nav-link" href="#">Корзина</a> </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- Start BookSide Area -->
@@ -45,10 +47,10 @@
             <!--Left -->
             <div class="row my-2">
                 <!-- Left Filter-->
-                <div class="col-lg-21 col-md-2 col-sm-12 ">
+                <div class="col-lg-21 col-md-2 col-sm-12 my-2 ">
                     <div class="form-search-check">
                         <input class="form-check-input " type="checkbox" value=""  id="searchcheckbox">
-                        <label class="form-check-label" for="searchcheckbox">
+                        <label class="form-check-label text-center" for="searchcheckbox">
                             Только доступные
                         </label>
                     </div>
@@ -57,14 +59,15 @@
                 <div class="container-fluid col-lg-10 col-md-10 col-sm-12">
                     <!--Start Short Form -->
                     <div class="row books-list-option">
-                        <div class="order-single-btn col-lg-4 col-md-4 col-sm-12">
+                        <div class="order-single-btn col-lg-3 col-md-3 col-sm-12 my-2">
                             <select class="select-color selectpicker">
                                 <option>Сначала новые</option>
                                 <option>По названию</option>
                                 <option>Сортировать по рейтингу</option>
                             </select>
                         </div>
-                        <div class="shp-pro-show col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-md-2"> </div>
+                        <div class="shp-pro-show col-lg-3 col-md-3 col-sm-12">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination">
                                     <li class="page-item">
@@ -86,30 +89,83 @@
                     </div>
                     <!--End Short Form -->
                     <!--Start Books Price -->
-                    <div class="card-desk">
-                        <div class="card">
-                            <img class="card-img-top" src="images/239px200.jpg" width="239" height="200" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    <div class="container">
+                        <div class="row card-desk">
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book1.jpeg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-success">Есть в наличии</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </div>
+                            </div>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book2.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-warning">Нет в наличии</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-warning">Забронировать книгу</a>
+                                </div>
+                            </div>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book3.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-danger">Утилизирована</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-secondary disabled">Взять книгу</a>
+                                </div>
+                            </div>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book3.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-danger">Утилизирована</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-secondary disabled">Взять книгу</a>
+                                </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <img class="card-img-top" src="images/239px200.jpg" width="100" height="200" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                    <div class="container">
+                        <div class="row card-desk">
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book1.jpeg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-success">Есть в наличии</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-success">Взять книгу</a>
+                                </div>
                             </div>
-                        </div>
-
-                        <div class="card">
-                            <img class="card-img-top" src="images/239px200.jpg" width="100" height="200" alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Название карточки</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book2.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-warning">Нет в наличии</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-warning">Забронировать книгу</a>
+                                </div>
+                            </div>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book3.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-danger">Утилизирована</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-secondary disabled">Взять книгу</a>
+                                </div>
+                            </div>
+                            <div class="card col-sm-3">
+                                <img class="card-img-top" src="images/book3.jpg" width="150" alt="Card image cap">
+                                <div class="card-body">
+                                    <p class="card-text"><span class="badge badge-pill badge-danger">Утилизирована</span> </p>
+                                    <h5 class="card-title">Правила дорожного движения Российской Федерации на 2019 год </h5>
+                                    <p class="card-text">Жульнев Н.Я.</p>
+                                    <a href="#" class="btn btn-block btn-outline-secondary disabled">Взять книгу</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -117,7 +173,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
 <!-- Optional JavaScript -->
