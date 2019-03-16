@@ -22,13 +22,7 @@
     -webkit-text-stroke-width: 1px;
 }
 
-.navbar-collapse{
-     justify-content: flex-end;
- }
 
-.navbar-toggler{
-    background:#fff !important;
-}
 
 .bg-dark{
     background-color: #343a40!important;
