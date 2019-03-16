@@ -33,16 +33,71 @@
             </ul>
         </div>
     </nav>
+    <br>
+
+
 
     <!-- Start BookSide Area -->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-md-center col-md-auto">
             <div class="col">
-                <input id="searchinput" class="form-control input-lg  my-2" type="search" placeholder="Введите название или автора" aria-label="Search">
+                <input id="searchinput" class="form-control input-lg" type="search" placeholder="Введите название или автора" aria-label="Search">
             </div>
-            <button class="btn btn-outline-primary  my-2" type="submit">Найти</button>
+            <button class="btn btn-outline orange" type="submit">Найти</button>
+        </div>
+        <br>
+
+        <!-- Start New Books -->
+        <div id="ThumbnailCarousel" class="carousel slide col-xs-12" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-md-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-md-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-md-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                        <div class="col-sm-3"><a href="#x" class="thumbnail"><img src="http://placehold.it/250x250" alt="Image" class="img-fluid img-thumbnail"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#ThumbnailCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#ThumbnailCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
 
+        <!-- End New Books -->
         <div class="container-fluid">
             <!--Left -->
             <div class="row my-2">
@@ -183,6 +238,5 @@
             crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
             crossorigin="anonymous"></script>
-
 </body>
 </html>
