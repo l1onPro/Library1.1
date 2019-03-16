@@ -27,6 +27,12 @@
     color: #f97300;
 }
 
+.btn.orange:hover{
+    border: 1px solid #f97300;
+    background: #f4f4f4;
+    color: #f97300;
+}
+
 .navbar-collapse{
     justify-content: flex-start;
 }
@@ -45,4 +51,26 @@
     outline: 0;
     -webkit-box-shadow: inset 0 0px 0px #f97300;
     box-shadow: inset 0 0px 0px #f97300;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+    transform: translateX(25%);
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+    transform: translateX(-25%);
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+    transform: translateX(0);
+
 }
