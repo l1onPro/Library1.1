@@ -22,6 +22,9 @@
     -webkit-text-stroke-width: 1px;
 }
 
+.navbar-collapse{
+    justify-content: flex-start;
+}
 
 
 .bg-dark{
